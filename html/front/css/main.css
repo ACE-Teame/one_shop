@@ -51,29 +51,47 @@ nav .menu li a { display: block; width: 100%; text-align: center; line-height: 2
 .order .entry img { display: inline; width: 80px; }
 .order .entry em { font-style: normal; color: red; }
 .order .entry select { margin-bottom: 0; width: 30%; }
-/*.order .entry input[type=text] { height: 24px; padding: 4px 5px; width: 100%; font-size: 16px; color: #666; }
-.order .entry select { height: 34px; padding: 4px 5px; font-family: Arial, '微软雅黑'; }
-.order .entry textarea { height: 50px; padding: 4px 5px; width: 100%; font-family: "Microsoft YaHei"; color: #666; }*/
 .order .entry #num { float: left; text-align: center; }
 .order .entry #plus, .entry #add { background: #f4f4f4; float: left; height: 26px; width: 36px; border: 1px solid #ccc; color: #333; line-height: 28px; font-weight: bolder; text-align: center; border-radius: 5px; }
 .order .entry #plus:hover, .entry #add:hover { background: #ccc; } 
 
 .reply { padding-bottom: 20px; }
-.reply .title { width: 100%; background: #d21f17; color: #fff; }
-.reply .title li { float: left; width: 25%; text-align: center; padding: 8px 0; }
+.reply .title { width: 100%; background: #e30; color: #fff; text-align: center; padding: 8px 0; }
+/*.reply .title li { float: left; width: 25%; text-align: center; padding: 8px 0; }*/
+#show {
+	overflow: hidden;
+	height: 100px;
+	position: relative;
+	background: #EFEFEF;
+	font-size: 13px;
+}
+#demo1 {
+	height: auto;
+	text-align: left;
+}
+#demo2 {
+	height: auto;
+	text-align: left;
+}
+#demo1 li {
+	list-style-type: none;
+	line-height: 22px;
+	text-align: left;
+	text-indent: 15px;
+}
+#demo2 li {
+	list-style-type: none;
+	line-height: 22px;
+	text-align: left;
+	text-indent: 15px;
+}
+#demo1 span {
+	color: #0C3;
+}
+#demo2 span {
+	color: #0C3;
+}
 
-#show { overflow: hidden; height: 80px; position: relative; background: #fff; font-size: 13px; }
-#demo1 { height: auto; text-align: left; }
-#demo1 li { list-style-type: none; line-height: 22px; text-align: left; text-indent: 15px; }
-#demo1 span { color: #0C3; }
-#demo1 li .one { width: 100%; }
-#demo1 li .one li { float: left; width: 25%; text-align: center; }
-
-#demo2 { height: auto; text-align: left; }
-#demo2 li { list-style-type: none; line-height: 22px; text-align: left; text-indent: 15px; }
-#demo2 span { color: #0C3; }
-#demo2 li .one { width: 100%; }
-#demo2 li .one li { float: left; width: 25%; text-align: center; }
 
 footer { padding-top: 10px; padding-bottom: 50px; text-align: center; margin-bottom: 10px; }
 footer img { max-width: 300px; display: inline; }
@@ -82,33 +100,9 @@ footer p { padding: 0; }
 @media all and (max-width: 480px){
 .order .entry .fl { width: 20%; }
 .order .entry .fr { width: 78%; }
-.order .entry select { margin-bottom: 5px; }
+.order .entry select { margin-bottom: 5px; width: 100%; }
 
 .banner .price .list li:nth-child(1) { font-size: 30px; }
 .banner .price .time li:nth-child(1) { font-size: 16px; }
 .banner .price .time li span { font-size: 18px; }
 }
-/*
-.order { background: #fff; padding-bottom: 20px; }
-.order .content { padding: 0 10px; }
-.order .content p { line-height: 30px; }
-.order .entry { padding: 5px 0; }
-.order .entry .left { float: left; width: 30%; margin-right: 3%; text-align: right; }
-.order .entry .right { float: left; width: 60%; }
-.order .entry:after { content: ''; display: table; clear: both; }
-.order .entry img { display: inline; width: 80px; }
-.order .entry em { font-style: normal; color: red; }
-.order .entry input[type=text] { height: 24px; padding: 4px 5px; width: 100%; font-size: 16px; color: #666; }
-.order .entry select { height: 34px; padding: 4px 5px; font-family: Arial, '微软雅黑'; }
-.order .entry textarea { height: 50px; padding: 4px 5px; width: 100%; font-family: "Microsoft YaHei"; color: #666; }
-.order .entry #num { float: left; text-align: center; }
-.order .entry #plus, .entry #add { background: #f4f4f4; float: left; height: 34px; width: 40px; border: 1px solid #ccc; color: #333; line-height: 34px; font-weight: bolder; text-align: center; }
-.order .entry #plus:hover, .entry #add:hover { background: #ccc; } 
-
-
-@media all and (max-width: 768px){
- .list li:nth-child(1) { font-size: 35px; }
- .time li:nth-child(1) { font-size: 16px; }
- .time li span { font-size: 18px; }
-
-}*/

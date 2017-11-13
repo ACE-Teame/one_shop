@@ -151,39 +151,10 @@
 		
 	</section>
 	<section class="reply">
-		<ul class="title clear">
-			<li>姓名</li>
-			<li>收货地址</li>
-			<li>电话号码</li>
-			<li>订单状态</li>
-		</ul>
+		<div class="title">最新下单</div>
 		<div id="show">
 			<ul id="demo1">
 				<li>
-					<ul class="one clear">
-						<li>张先生</li>
-						<li>深圳</li>
-						<li>138****291</li>
-						<li>已下单</li>
-					</ul>
-				</li>
-				<li>
-					<ul class="one clear">
-						<li>张先生</li>
-						<li>深圳</li>
-						<li>138****291</li>
-						<li>已下单</li>
-					</ul>
-				</li>
-				<li>
-					<ul class="one clear">
-						<li>张先生</li>
-						<li>深圳</li>
-						<li>138****291</li>
-						<li>已下单</li>
-					</ul>
-				</li>
-				<!-- <li>
 					<span>[最新购买]：</span>周**（136****7163）在1分钟前订购了 防水全自动机械表<font color="#FF0000">√</font>
 				</li>
 				<li>
@@ -206,7 +177,7 @@
 				</li>
 				<li>
 					<span>[最新购买]：</span>刘**（136****7125）在5小时前订购了 防水全自动机械表<font color="#FF0000">√</font>
-				</li> -->
+				</li>
 			</ul>
 			<div id="demo2"></div>
 		</div>
@@ -265,23 +236,23 @@
 		setTimeout(countTime, 1000);    
 	}
 
-  	var speed = 140;
-	window.onload = function(){
-		var demo = document.getElementById("show"); 
-		var demo2 = document.getElementById("demo2"); 
-		var demo1 = document.getElementById("demo1"); 
-		demo2.innerHTML = demo1.innerHTML 
+	var speed=140;
+	window.onload=function(){
+		var demo=document.getElementById("show"); 
+		var demo2=document.getElementById("demo2"); 
+		var demo1=document.getElementById("demo1"); 
+		demo2.innerHTML=demo1.innerHTML 
 		function Marquee(){ 
-			if(demo.scrollTop >= demo1.offsetHeight){
-				demo.scrollTop = 0; 
+			if(demo.scrollTop>=demo1.offsetHeight){
+				demo.scrollTop=0; 
 			}
 			else{ 
-			demo.scrollTop = demo.scrollTop + 1;
+			demo.scrollTop=demo.scrollTop+1;
 			} 
 		} 
-		var MyMar = setInterval(Marquee, speed);
-		demo.onmouseover = function(){ clearInterval(MyMar); } 
-		demo.onmouseout = function(){ MyMar = setInterval(Marquee, speed); } 
+		var MyMar=setInterval(Marquee,speed) 
+		demo.onmouseover=function(){clearInterval(MyMar)} 
+		demo.onmouseout=function(){MyMar=setInterval(Marquee,speed)} 
 		countTime();
 	}
 </script>
