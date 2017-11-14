@@ -1,6 +1,14 @@
 <div class="top clear">
     <div class="top-logo fl">
-        商城后台
+        <div class="nav-toggle">
+            <div>           
+                <a class="open active" href="#"><i class="iconfont icon-menu"></i></a>
+            </div>
+            <div>           
+                <a class="close" href="#"><i class="iconfont icon-close"></i></a>
+            </div>
+        </div>
+        <div class="title">商城后台</div>
     </div>
     <div class="top-nav fr">
         <ul class="clear">

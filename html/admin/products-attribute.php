@@ -7,11 +7,9 @@
         <div class="main clear">
             <?php require('nav-left.php'); ?>
             <div class="main-fr">
-                <div class="title">产品列表</div>
+                <div class="title">产品管理 > 产品属性</div>
                 <div class="operate">
                     <a href="#" class="btn btn-add">新增</a>
-                    <a href="#" class="btn btn-export">导出</a>
-                    <a href="#" class="btn btn-search">查询</a>
                     <a href="#" class="btn btn-delete">删除</a>
                 </div>
                 <div class="table">                    
@@ -20,11 +18,8 @@
                             <tr>
                                 <th><input type="checkbox" class="check" name="" value=""></th>
                                 <th>ID</th>
-                                <th>名称</th>
-                                <th>描述</th>
-                                <th>价格(元)</th>
-                                <th>库存</th>
-                                <th>分类</th>
+                                <th>属性名称</th>
+                                <th>属性描述</th>
                                 <th>操作</th>
                             </tr>                            
                         </thead>
@@ -32,22 +27,16 @@
                             <tr>
                                 <td><input type="checkbox" class="check" name="" value=""></td>
                                 <td>1</td>
-                                <td>产品1</td>
-                                <td>产品1描述</td>
-                                <td>1000.00</td>
-                                <td>1000</td>
-                                <td>类别1</td>
-                                <td><a href="product-detail.php" class="btn btn-modify">修改</a></td>
+                                <td>属性1</td>
+                                <td>属性描述</td>
+                                <td><a href="products-attribute-detail.php" class="btn btn-modify">修改</a></td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" class="check" name="" value=""></td>
                                 <td>2</td>
-                                <td>产品2</td>
-                                <td>产品2描述</td>
-                                <td>2000.00</td>
-                                <td>200</td>
-                                <td>类别2</td>
-                                <td><a href="product-detail.php" class="btn btn-modify">修改</a></td>
+                                <td>属性2</td>
+                                <td>属性2描述</td>
+                                <td><a href="products-attribute-detail.php" class="btn btn-modify">修改</a></td>
                             </tr>
                         </tbody>
                     </table>

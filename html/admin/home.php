@@ -18,7 +18,6 @@
                         <li id="tab-2"><a href="#">产品主图</a></li>
                         <li id="tab-3"><a href="#">购买流程</a></li>
                         <li id="tab-4"><a href="#">产品简介</a></li>
-                        <!-- <li id="tab-5"><a href="#">用户回复</a></li> -->
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -151,20 +150,6 @@
                             </div>
                         </form>
                     </div>
-                    <!-- <div class="tab-pane tab-5">
-                        <form action="#" class="operateForm" method="POST" name="form1">
-                            <div class="entry">
-                                <div class="text">
-                                    <p>客户留言</p>
-                                </div>
-                                <div>
-                                    <script id="reply" name="reply" type="text/plain">
-                                        这里写你的初始化内容
-                                    </script>   
-                                </div>
-                            </div>
-                        </form>
-                    </div> -->
 
                 </div>
                 
@@ -174,9 +159,9 @@
 <script src="js/ueditor/ueditor.config.js"></script>
 <script src="js/ueditor/ueditor.all.js"></script>
 <script >
-        var mainImg = UE.getEditor('mainImg'); // 主图
-        var proc = UE.getEditor('process'); // 购买流程
-        var desc = UE.getEditor('description'); // 产品描述
-        // var reply = UE.getEditor('reply'); // 客户留言
-    </script>
+    var mainImg = UE.getEditor('mainImg'); // 主图
+    var proc = UE.getEditor('process'); // 购买流程
+    var desc = UE.getEditor('description'); // 产品描述
+    // var reply = UE.getEditor('reply'); // 客户留言
+</script>
 <?php require('footer.php'); ?>
